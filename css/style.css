@@ -1,0 +1,195 @@
+body {
+    background-image: url("../images/backgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+.allContainer{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    text-align: left;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 25px;
+
+    width: 50%;
+    height: 590px;
+
+    border: solid 6px #A7CDE8;
+
+    background-color: rgba(169, 255, 247, 0.8);
+
+    overflow-y: scroll;
+}
+/* header {
+    position: fixed;
+}
+nav {
+    position: fixed;
+} */
+.allContainer::-webkit-scrollbar {
+    display: none;
+}
+.logo {
+
+    color: black;
+    font-family: fantasy;
+    font-size: 50px;
+
+    margin-bottom: 30px;
+
+    width: 80%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    background-color: rgba(167, 205, 232, 0.8);
+    color: black;
+
+    height: 30px;
+    width: 100%;
+    margin-bottom: 0px;
+
+    text-align: center;
+    font-size: 12px;
+}
+.topNav {
+    font-size: 25px;
+    
+    width: 80%;
+    height: auto;
+
+    background-color: #3B60E4;
+}
+.topNav a {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-decoration: none;
+
+    color: black;
+}
+.topNav a:hover{
+    background-color: #B8E1FF;
+    text-decoration: underline;
+}
+.headerImage {
+    position: relative;
+    color: white;
+}
+.topLeft{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 30px;
+}
+.middleLeft{
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    font-size: 20px;
+}
+.consoleNav {
+    font-size: 25px;
+    
+    width: 80%;
+    height: auto;
+
+    background-color: #A9FFF7;
+}
+.consoleNav a {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-decoration: none;
+
+    color: black;
+}
+.playstation:hover{
+    background-color: blue;
+    text-decoration: underline;
+}
+.xbox:hover{
+    background-color: green;
+    text-decoration: underline;
+}
+.pc:hover{
+    background-color: purple;
+    text-decoration: underline;
+}
+.homepageLink {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+.homepageLink:hover {
+    background-color: #A7CDE8;
+    text-decoration: underline;
+}
+.popularGames {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Playstation {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+    background-color: blue;
+    color: white;
+}
+.Xbox {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+    background-color: green;
+    color: white;
+}
+.Pc {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+    background-color: purple;
+    color: white;
+}
+.gameImg {
+    margin-bottom: 5px;
+}
+.platformGames {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 50px;
+}
