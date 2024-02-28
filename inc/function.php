@@ -175,6 +175,18 @@ function bodyConsoles($platform){
     <?php
 }
 
+function aboutUs(){
+    $abouts = getAbout();
+
+    foreach ($abouts as $about) {
+        ?>
+        <h2><?php echo $about['item1']; ?></h2>
+        <p><?php echo $about['item2']; ?></p>
+        <img src="<?php echo $about['item3']; ?>">
+        <?php
+    }
+}
+
 function htmlFoot(){
     ?>
         </div>
@@ -253,6 +265,20 @@ function getGames(){
     $conn = dbConnect();
 
     $sql = "SELECT * FROM games";
+
+    // Query the database and get results
+    $resource = $conn->query($sql) or die($conn->error);
+
+    // Collecting all rows as separate arrays
+    $navItems = $resource->fetch_all(MYSQLI_ASSOC);
+
+    return $navItems;
+}
+
+function getAbout(){
+    $conn = dbConnect();
+
+    $sql = "SELECT * FROM aboutus";
 
     // Query the database and get results
     $resource = $conn->query($sql) or die($conn->error);
